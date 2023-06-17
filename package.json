@@ -1,0 +1,22 @@
+{
+  "name": "porfolio",
+  "version": "1.0.0",
+  "description": "portfolio-uitbreiding",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerDurden-cmd/Portfolio.git"
+  },
+  "keywords": [
+    "por"
+  ],
+  "author": "Joachim Adomako",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerDurden-cmd/Portfolio/issues"
+  },
+  "homepage": "https://github.com/TylerDurden-cmd/Portfolio#readme"
+}
