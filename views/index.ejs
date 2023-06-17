@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs")%>
+
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+
+    <main>
+        <section id="boxContainer">
+            <h3>Welkom op mijn Portfolio, Mijn naam is Joachim.</h3>
+            <p>Als Student op AP Hogeschool doe ik de ricthing Programmeren</p>
+
+
+            <br>
+            <p>Als Developer zijn mijn intressen:</p>
+            <ul>
+                <li>javascript</li>
+                <li>ejs</li>
+                <li>git</li>
+                <li>c#</li>
+                <li>typescript</li>
+                <li>css</li>
+                <li>Artificial intelligence</li>
+            </ul>
+
+            <form action="http://localhost:3000" method="post">
+                <input type="text" name="naam">
+                <input type="email" name="email">
+                <input type="text" name="comment">
+                <input type="submit">
+            </form>
+
+        </section>
+    </main>
+    <section class="line"></section>
+
+    <aside>
+
+    </aside>
+
+
+
+    <%- include("partials/footer.ejs")%>

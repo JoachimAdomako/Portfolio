@@ -1,0 +1,70 @@
+html,
+body {
+    margin: 0%;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    background-color: var(--backgroundColor--);
+}
+
+:root {
+    --primaryColor--: #1F2340;
+    --backgroundColor--: #F5F5F5;
+    --secondColorBack--: #333C48;
+    --textColorBordersetc--: #707C8E;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: aliceblue;
+    background-color: black;
+    margin-top: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: var(--textColorBordersetc--);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#boxContainer {
+    background-color: var(--secondColorBack--);
+    padding: 100px;
+    border-radius: 15px;
+    color: var(--textColorBordersetc--);
+}
+
+.line {
+    padding: 0.7px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    background-color: var(--primaryColor--);
+}
+
+/* 
+For a portfolio website, you might want to consider a color palette that reflects professionalism, creativity, and sophistication. Here's a suggestion:
+
+Primary Color: #3E84B1 (Steel Blue)
+This deep and cool blue color exudes professionalism and stability, creating a sense of trust for your portfolio.
+
+Accent Color: #FF6B6B (Coral)
+Adding a pop of vibrant coral as an accent color can bring energy and creativity to your portfolio, making it visually appealing.
+
+Background Color: #F7F7F7 (Light Gray)
+Opting for a light gray background color keeps the focus on your work and ensures readability without distracting from the content.
+
+Complementary Color: #6CA8B1 (Teal)
+Teal is a complementary color that pairs well with the primary and accent colors. It adds a touch of elegance and sophistication to your portfolio.
+
+Call-to-Action Color: #FFA500 (Orange)
+Use a vibrant orange color for your call-to-action buttons or links to create a sense of urgency and encourage visitors to explore your work further. */

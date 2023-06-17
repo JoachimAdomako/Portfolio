@@ -1,0 +1,1 @@
+# THIS Porfolio is property of Joachim Adomako.
