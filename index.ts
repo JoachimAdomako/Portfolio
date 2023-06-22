@@ -17,25 +17,29 @@ app.get("/",(req,res)=>{
     res.render('index')
 })
 
-app.post("/",(req,res)=>{
+app.post("/", async(req,res)=>{
     try{
-        client.connect();
+        await client.connect();
 
-        const db = client.db("Portfolio").collection("Comments");
+        const db = await client.db("Portfolio").collection("Comments");
     let naam = req.body.naam;
     let Email = req.body.email;
     let comment = req.body.comment;
 
-    db.insertOne({naam,Email,comment});
+    await db.insertOne({naam,Email,comment});
 }catch(e){
     console.error(e);
 }finally{
-    client.close()
+    await client.close()
     console.log("check the db")
 }
 res.render("index")
 
+})
 
+
+app.get("/pokemonBattler",(req,res)=>{
+    res.render('battler')
 })
 
 app.listen(app.get("port"),()=>{

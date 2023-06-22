@@ -1,11 +1,16 @@
 <%- include("partials/header.ejs")%>
 
-    <header>
+    <header id="header">
         <h1>Portfolio</h1>
     </header>
 
+    <section id="darkmode">
+        <p id="P">DarkMode</p>
+        <input type="button" id="btnDarkMode" value="Toggle"></input>
+    </section>
     <main>
         <section id="boxContainer">
+            <img src="/assets/foto-van-mezelf-cropt.jpg" width="180px" alt="" id="imgProfile">
             <h3>Welkom op mijn Portfolio, Mijn naam is Joachim.</h3>
             <p>Als Student op AP Hogeschool doe ik de ricthing Programmeren</p>
 
@@ -22,21 +27,22 @@
                 <li>Artificial intelligence</li>
             </ul>
 
-            <form action="http://localhost:3000" method="post">
-                <input type="text" name="naam">
-                <input type="email" name="email">
-                <input type="text" name="comment">
+            <form action="http://localhost:3000" method="post" id="form">
+                <h3>Stuur me een bericht:</h3>
+                <input type="text" name="naam" placeholder="naam">
+                <input type="email" name="email" placeholder="email">
+                <input type="text" name="comment" placeholder="bericht">
                 <input type="submit">
             </form>
 
+            <input type="button" id="battlerlink">
         </section>
     </main>
-    <section class="line"></section>
 
     <aside>
 
     </aside>
 
 
-
+    <script src="/js/javascript.js"></script>
     <%- include("partials/footer.ejs")%>

@@ -14,7 +14,14 @@ body {
     --backgroundColor--: #F5F5F5;
     --secondColorBack--: #333C48;
     --textColorBordersetc--: #707C8E;
+    /* DarkMode */
+    --primaryColorDark--: #E0DCCF;
+    --backgroundColorDark--: #0A0A0A;
+    --secondColorBackDark--: #CCC3B7;
+    --textcolorBordersetcDark--: #8F8371;
 }
+
+
 
 footer {
     display: flex;
@@ -22,7 +29,7 @@ footer {
     justify-content: center;
     color: aliceblue;
     background-color: black;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 header {
@@ -38,17 +45,53 @@ main {
 
 #boxContainer {
     background-color: var(--secondColorBack--);
-    padding: 100px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 200px;
+    padding-top: 140px;
     border-radius: 15px;
     color: var(--textColorBordersetc--);
+    box-shadow: 7px 10px 20px black;
 }
 
-.line {
-    padding: 0.7px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 30px;
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#imgProfile {
+    top: 15%;
+    right: 25%;
+    position: absolute;
+    border-radius: 50%;
+    border: white 5px solid;
+    border-style: solid;
+}
+
+#darkmode {
+    top: 5%;
+    right: 10%;
+    position: absolute;
+}
+
+#btnDarkMode {
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px black;
+}
+
+#btnDarkMode:active {
+    box-shadow: 0px 0px 0px white;
     background-color: var(--primaryColor--);
+    content: "hallo";
+}
+
+#P {
+    color: var(--textColorBordersetc--);
 }
 
 /* 
